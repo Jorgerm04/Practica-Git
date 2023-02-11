@@ -1,5 +1,5 @@
 package Gestion_Pedidos;
-import java.math.RoundingMode;
+
 import java.util.Scanner;
 
 
@@ -138,6 +138,7 @@ public class Pedido {
 			unidades1=sc.nextInt();
 			p1.setCantidad(unidades1);
 			price1=unidades1*price1;
+			p1.controlStock(unidades1,p1);
 			
 			pedi.setImporteTotal(price1);
 			pedi.setProducto1(p1);	
@@ -151,6 +152,7 @@ public class Pedido {
 			unidades1=sc.nextInt();
 			p2.setCantidad(unidades1);
 			price1=unidades1*price1;
+			p2.controlStock(unidades1,p2);
 			
 			pedi.setImporteTotal(price1);
 			pedi.setProducto1(p2);
@@ -165,6 +167,7 @@ public class Pedido {
 			unidades1=sc.nextInt();
 			p3.setCantidad(unidades1);
 			price1=unidades1*price1;
+			p3.controlStock(unidades1,p3);
 			
 			pedi.setImporteTotal(price1);
 			pedi.setProducto1(p3);
@@ -179,6 +182,7 @@ public class Pedido {
 			unidades1=sc.nextInt();
 			p4.setCantidad(unidades1);
 			price1=unidades1*price1;
+			p4.controlStock(unidades1,p4);
 			
 			pedi.setImporteTotal(price1);
 			pedi.setProducto1(p4);
@@ -193,6 +197,7 @@ public class Pedido {
 			unidades1=sc.nextInt();
 			p5.setCantidad(unidades1);
 			price1=unidades1*price1;
+			p5.controlStock(unidades1,p5);
 			
 			pedi.setImporteTotal(price1);
 			pedi.setProducto1(p5);
@@ -247,6 +252,7 @@ public class Pedido {
 			unidades2=sc.nextInt();
 			p1.setCantidad(unidades2);
 			price2=unidades2*price2;
+			p1.controlStock(unidades2,p1);
 			
 			pedi.setImporteTotal(pedi.getImporteTotal()+price2);
 			pedi.setProducto2(p1);
@@ -264,6 +270,7 @@ public class Pedido {
 			unidades2=sc.nextInt();
 			p2.setCantidad(unidades2);
 			price2=unidades2*price2;
+			p2.controlStock(unidades2,p2);
 			
 			pedi.setImporteTotal(pedi.getImporteTotal()+price2);
 			pedi.setProducto2(p2);
@@ -278,6 +285,7 @@ public class Pedido {
 			unidades2=sc.nextInt();
 			p3.setCantidad(unidades2);
 			price2=unidades2*price2;
+			p3.controlStock(unidades2,p3);
 			
 			pedi.setImporteTotal(pedi.getImporteTotal()+price2);
 			pedi.setProducto2(p3);
@@ -292,6 +300,7 @@ public class Pedido {
 			unidades2=sc.nextInt();
 			p4.setCantidad(unidades2);
 			price2=unidades2*price2;
+			p4.controlStock(unidades2,p4);
 			
 			pedi.setImporteTotal(pedi.getImporteTotal()+price2);
 			pedi.setProducto2(p4);
@@ -306,6 +315,7 @@ public class Pedido {
 			unidades2=sc.nextInt();
 			p5.setCantidad(unidades2);
 			price2=unidades2*price2;
+			p5.controlStock(unidades2,p5);
 			
 			pedi.setImporteTotal(pedi.getImporteTotal()+price2);
 			pedi.setProducto2(p5);

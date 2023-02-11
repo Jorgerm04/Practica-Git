@@ -4,9 +4,8 @@ import java.util.Scanner;
 
 public class Main {
 	public static void main(String[]args) {
-		int opcion,unidades1,unidades2;
+		int opcion;
 		char eleccion;
-		double price1,price2;
 		long codigoLong;
 		String codigoString = null;
 		String Tel=null;
